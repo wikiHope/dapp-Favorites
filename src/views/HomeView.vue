@@ -19,16 +19,37 @@
     </div>
     <div class="main">
       <div class="container">
-        <div
-          v-for="(item, index) in mediaList"
-          :key="index"
-          class="item-img-box"
-          @click="goMedia(item[1].value)"
-        >
-          <div class="partner-item-name">
-            {{ item[0].value }}
+        <div>
+            <input type="text" class="form-control" placeholder="请输入想要搜索关键字" v-model="searchKey" @keyup="get($event)">
+        </div>
+        <div style="width: 100%;" >
+          <div class="cardLine">
+            <div class="card" v-for="(item, index) in mediaList">
+              <div class="face">
+                <!-- 卡片 logo -->
+                <img class="logo" :src="item[3].value" />
+                <!-- 卡片号码 -->
+                <label>Project Name</label>
+                <input class="card-number" :placeholder="item[0].value" type="text" required maxlength="16" />
+                <!--  -->
+                <div class="container2">
+                  <!-- Project Label -->
+                  <div class="name">
+                    <label>Project Label</label>
+                    <input class="card-name" placeholder="DEFI NFT WEB3 .." type="text" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="back">
+                <div @click="goMedia(item[1].value)">
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 20px;font-weight: 600;">项目介绍：{{item[0].value}}</div>
+                  <br>
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 16px;font-weight: normal;">{{item[2].value}}</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <img class="share-icon" src="@/assets/share.png" alt="" />
         </div>
       </div>
     </div>
@@ -41,7 +62,9 @@ export default {
   components: {},
   data() {
     return {
+      searchKey: null,
       config: null,
+      currentDate: new Date()
     };
   },
   created() {},
@@ -53,6 +76,7 @@ export default {
       this.axios
         .get("./config.json")
         .then((res) => {
+          debugger
           const { data } = res;
           if (data.Name[0].value) {
             document.title = data.Name[0].value;
@@ -67,10 +91,37 @@ export default {
           });
           this.config = data;
           this.mediaList = Arr;
+          this.showList = []
+          if (this.mediaList.length > 0) {
+              for (var i = 0; i < this.mediaList.length; i++) {
+                  if (i % 4 === 0) {
+                      const array = []
+                      array.push(this.mediaList[i])
+                      this.showList.push(array)
+                  } else {
+                      this.showList[Math.floor(i / 4)].push(this.mediaList[i])
+                  }
+              }
+          }
         })
         .catch((error) => {
           console.log(error);
         });
+    },
+    get:function (event) {
+        if(event.keyCode==38||event.keyCode==40)return;
+        if(event.keyCode==13){
+            window.open('https://www.baidu.com/s?wd='+this.keyword);
+            this.keyword=''
+        }
+        this.$http.jsonp('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?', {
+            params: {
+                wd: this.keyword
+            },
+            jsonp: 'cb'
+        }).then((res) => {
+            console.log("res11",res)
+        })
     },
     goMedia(link) {
       window.open(link);
@@ -80,8 +131,8 @@ export default {
 </script>
 <style lang="less">
 .container {
-  max-width: 1040px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: auto;
 }
 .home {
   min-height: 90vh;
@@ -150,5 +201,152 @@ export default {
       }
     }
   }
+  .time {
+    font-size: 13px;
+    color: #999;
+  }
+
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
+
+  .button {
+    padding: 0;
+    float: right;
+  }
+
+  .image {
+    width: 100%;
+    display: block;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+
+  .clearfix:after {
+    clear: both
+  }
+
+
+  .cardLine {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 320px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(35px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+  }
+  .face {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+  }
+  .back {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+    transform: rotateY(180deg);
+    padding: 20px;
+  }
+  .card:hover .face{
+    transform: rotateY(-180deg)
+  }
+  .card:hover .back{
+    transform: rotateY(0deg)
+  }
+
+
+
+  .container2 {
+    display: flex;
+  }
+  .logo {
+    height: 60px;
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  .card-number {
+    font-size: 30px;
+    font-family: "Space Mono", monospace;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+  .card-number::placeholder {
+    color: black;
+    font-size: 22px;
+    font-family: "Space Mono", monospace;
+  }
+  input::placeholder {
+     color: black;
+     font-family: "Space Mono", monospace;
+   }
+  input{
+    color: black;
+    font-family: "Space Mono", monospace;
+  }
+  .name {
+    font-family: "Space Mono", monospace;
+    padding: 0px 80px 0px 0px;
+    margin-right: 40px;
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  input {
+    font-family: "Space Mono", monospace;
+    border: none;
+    font-size: 16px;
+    height: 26px;
+    color: black;
+    background: 0;
+    padding: 0;
+    width: 0;
+    border-bottom: 1px solid white;
+  }
+  label {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    pointer-events: none;
+    display: block;
+    padding-bottom: 2px;
+  }
+  .card-name {
+    color: white;
+    font-size: 16px;
+    height: 26px;
+    width: 160px;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+/*  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }*/
 }
 </style>
