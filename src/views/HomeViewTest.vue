@@ -40,9 +40,9 @@
 
               <div class="back">
                 <div @click="goMedia(item[1].value)">
-                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;margin: 5px;font-size: 24px;font-weight: 600;">项目介绍：{{item[0].value}}</div>
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 20px;font-weight: 600;">项目介绍：{{item[0].value}}</div>
                   <br>
-                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;margin: 5px;font-size: 18px;font-weight: normal;">{{item[2].value}}</div>
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 16px;font-weight: normal;">{{item[2].value}}</div>
                 </div>
               </div>
             </div>
@@ -229,21 +229,21 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .card {
     display: flex;
     flex-direction: column;
-    height: 280px;
-    width: 420px;
+    height: 260px;
+    width: 320px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(35px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
-    padding: 20px 30px 30px 30px;
-    margin: 20px 30px 30px 30px;
+    margin: 20px;
+    padding: 20px;
     overflow: hidden;
   }
   .face {
@@ -255,7 +255,8 @@ export default {
     position: absolute;
     backface-visibility: hidden;
     transition: 0.5s;
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
+    padding: 20px;
   }
   .card:hover .face{
     transform: rotateY(-180deg)
@@ -270,8 +271,8 @@ export default {
     display: flex;
   }
   .logo {
-    height: 80px;
-    width: 100px;
+    height: 60px;
+    width: 80px;
     margin-bottom: 20px;
   }
   .card-number {
@@ -283,7 +284,7 @@ export default {
   }
   .card-number::placeholder {
     color: black;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "Space Mono", monospace;
   }
   input::placeholder {
@@ -299,24 +300,6 @@ export default {
     padding: 0px 80px 0px 0px;
     margin-right: 40px;
     width: 150px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-  }
-  .expiration-date {
-    font-family: "Space Mono", monospace;
-    padding: 0px 0px 0px 0px;
-    margin-right: 60px;
-    width: 80px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-  }
-  .ccv {
-    font-family: "Space Mono", monospace;
-    padding: 0px 0px 0px 0px;
-    margin-right: 0px;
-    width: 60px;
     position: relative;
     display: inline-block;
     overflow: hidden;
