@@ -19,21 +19,36 @@
     </div>
     <div class="main">
       <div class="container">
-        <el-row>
-          <el-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
-            <el-card :body-style="{ padding: '0px' }">
-              <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
-              <div style="padding: 14px;">
-                <span>好吃的汉堡</span>
-                <div class="bottom clearfix">
-                  <time class="time">{{ currentDate }}</time>
-                  <el-button type="text" class="button">操作按钮</el-button>
+        <div style="width: 100%;" >
+          <div class="cardLine">
+            <div class="card" v-for="(item, index) in mediaList">
+              <div class="face">
+                <!-- 卡片 logo -->
+                <img class="logo" :src="item[3].value" />
+                <!-- 卡片号码 -->
+                <label>Project Name</label>
+                <input class="card-number" :placeholder="item[0].value" type="text" required maxlength="16" />
+                <!--  -->
+                <div class="container2">
+                  <!-- Project Label -->
+                  <div class="name">
+                    <label>Project Label</label>
+                    <input class="card-name" placeholder="DEFI NFT WEB3 .." type="text" required />
+                  </div>
                 </div>
               </div>
-            </el-card>
-          </el-col>
-        </el-row>
-        <div
+
+              <div class="back">
+                <div @click="goMedia(item[1].value)">
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;margin: 5px;font-size: 24px;font-weight: 600;">项目介绍：{{item[0].value}}</div>
+                  <br>
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;margin: 5px;font-size: 18px;font-weight: normal;">{{item[2].value}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--        <div
           v-for="(item, index) in mediaList"
           :key="index"
           class="item-img-box"
@@ -43,7 +58,7 @@
             {{ item[0].value }}
           </div>
           <img class="share-icon" src="@/assets/share.png" alt="" />
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -68,6 +83,7 @@ export default {
       this.axios
         .get("./config.json")
         .then((res) => {
+          debugger
           const { data } = res;
           if (data.Name[0].value) {
             document.title = data.Name[0].value;
@@ -82,6 +98,18 @@ export default {
           });
           this.config = data;
           this.mediaList = Arr;
+          this.showList = []
+          if (this.mediaList.length > 0) {
+              for (var i = 0; i < this.mediaList.length; i++) {
+                  if (i % 4 === 0) {
+                      const array = []
+                      array.push(this.mediaList[i])
+                      this.showList.push(array)
+                  } else {
+                      this.showList[Math.floor(i / 4)].push(this.mediaList[i])
+                  }
+              }
+          }
         })
         .catch((error) => {
           console.log(error);
@@ -95,8 +123,8 @@ export default {
 </script>
 <style lang="less">
 .container {
-  max-width: 1040px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: auto;
 }
 .home {
   min-height: 90vh;
@@ -164,35 +192,170 @@ export default {
         display: block;
       }
     }
-    .time {
-      font-size: 13px;
-      color: #999;
-    }
-
-    .bottom {
-      margin-top: 13px;
-      line-height: 12px;
-    }
-
-    .button {
-      padding: 0;
-      float: right;
-    }
-
-    .image {
-      width: 100%;
-      display: block;
-    }
-
-    .clearfix:before,
-    .clearfix:after {
-      display: table;
-      content: "";
-    }
-
-    .clearfix:after {
-      clear: both
-    }
   }
+  .time {
+    font-size: 13px;
+    color: #999;
+  }
+
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
+
+  .button {
+    padding: 0;
+    float: right;
+  }
+
+  .image {
+    width: 100%;
+    display: block;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+
+  .clearfix:after {
+    clear: both
+  }
+
+
+  .cardLine {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 420px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(35px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+    padding: 20px 30px 30px 30px;
+    margin: 20px 30px 30px 30px;
+    overflow: hidden;
+  }
+  .face {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+  }
+  .back {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+    transform: rotateY(180deg)
+  }
+  .card:hover .face{
+    transform: rotateY(-180deg)
+  }
+  .card:hover .back{
+    transform: rotateY(0deg)
+  }
+
+
+
+  .container2 {
+    display: flex;
+  }
+  .logo {
+    height: 80px;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .card-number {
+    font-size: 30px;
+    font-family: "Space Mono", monospace;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+  .card-number::placeholder {
+    color: black;
+    font-size: 30px;
+    font-family: "Space Mono", monospace;
+  }
+  input::placeholder {
+     color: black;
+     font-family: "Space Mono", monospace;
+   }
+  input{
+    color: black;
+    font-family: "Space Mono", monospace;
+  }
+  .name {
+    font-family: "Space Mono", monospace;
+    padding: 0px 80px 0px 0px;
+    margin-right: 40px;
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .expiration-date {
+    font-family: "Space Mono", monospace;
+    padding: 0px 0px 0px 0px;
+    margin-right: 60px;
+    width: 80px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .ccv {
+    font-family: "Space Mono", monospace;
+    padding: 0px 0px 0px 0px;
+    margin-right: 0px;
+    width: 60px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  input {
+    font-family: "Space Mono", monospace;
+    border: none;
+    font-size: 16px;
+    height: 26px;
+    color: black;
+    background: 0;
+    padding: 0;
+    width: 0;
+    border-bottom: 1px solid white;
+  }
+  label {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    pointer-events: none;
+    display: block;
+    padding-bottom: 2px;
+  }
+  .card-name {
+    color: white;
+    font-size: 16px;
+    height: 26px;
+    width: 160px;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+/*  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }*/
 }
 </style>
