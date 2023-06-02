@@ -19,9 +19,6 @@
     </div>
     <div class="main">
       <div class="container">
-        <div>
-            <input type="text" class="form-control" placeholder="请输入想要搜索关键字" v-model="searchKey" @keyup="get($event)">
-        </div>
         <div style="width: 100%;" >
           <div class="cardLine">
             <div class="card" v-for="(item, index) in mediaList">
