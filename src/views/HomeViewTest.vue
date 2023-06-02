@@ -183,7 +183,7 @@ export default {
       width: 100%;
       display: block;
     }
-    
+
     .clearfix:before,
     .clearfix:after {
       display: table;
