@@ -23,4 +23,4 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-https://discord.com/channels/@me/1082867499839795221/1114053751515402330
+![image](https://github.com/wikiHope/dapp-Favorites/assets/122792538/7a631741-6ef8-40ee-9d6e-a6fd480487fb)
