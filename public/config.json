@@ -35,25 +35,25 @@
         {
           "type": "text",
           "key": "name",
-          "value": "",
+          "value": "zkSync",
           "placeholder": "Enter the project name"
         },
         {
           "type": "text",
           "key": "link",
-          "value": "",
+          "value": "https://zksync.io/",
           "placeholder": "https:// | project website link"
         },
         {
           "type": "text",
           "key": "description",
-          "value": "",
+          "value": "zkSync is a scaling and privacy engine for Ethereum with functionality scope including transfers of ETH and ERC20 tokens in the Ethereum network, atomic swaps and limit orders, plus native L2 NFT support. zkSync is developed on zkRollup architecture and was created by Matter Labs.",
           "placeholder": "Enter the project Description"
         },
         {
           "type": "text",
           "key": "log",
-          "value": "",
+          "value": "https://wiki.4everland.store/img/zksync.png",
           "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
       ]
