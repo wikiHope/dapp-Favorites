@@ -1,5 +1,22 @@
 <template>
   <div class="home" v-if="config">
+    <div class="head">
+      <div class="info">
+        <div class="container">
+          <div class="avatar">
+            <img
+              :src="
+                config.Avatar[0].value
+                  ? config.Avatar[0].value
+                  : require('@/assets/head.png')
+              "
+              alt=""
+            />
+            <div class="nickname">{{ config.Name[0].value }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="main">
       <div class="container">
         <div style="width: 100%;" >
