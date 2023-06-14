@@ -1,20 +1,4 @@
 {
-  "Avatar": [
-    {
-      "type": "text",
-      "key": "avatar",
-      "value": "",
-      "placeholder": "https://(100*100)"
-    }
-  ],
-  "Name": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    }
-  ],
   "Link1": [
     {
       "type": "text",
