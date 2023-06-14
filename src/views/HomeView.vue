@@ -77,7 +77,7 @@ export default {
               item.options.forEach((i) => {
                   configObj[i.key] = i.value;
               })
-              if (configObj[i.key]) {
+              if (configObj.name) {
                   Arr.push(configObj)
               }
           })
