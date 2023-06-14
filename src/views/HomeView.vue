@@ -5,14 +5,9 @@
         <div class="container">
           <div class="avatar">
             <img
-              :src="
-                config.Avatar[0].value
-                  ? config.Avatar[0].value
-                  : require('@/assets/head.png')
-              "
+              :src="require('@/assets/head.png')"
               alt=""
             />
-            <div class="nickname">{{ config.Name[0].value }}</div>
           </div>
         </div>
       </div>
@@ -76,6 +71,7 @@ export default {
           debugger
           let Arr = [];
           const { data } = res;
+          console.log(res)
           data.config.forEach((item, index) => {
               let configObj = {};
               item.options.forEach((i) => {
