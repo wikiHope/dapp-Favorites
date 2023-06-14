@@ -1,22 +1,5 @@
 <template>
   <div class="home" v-if="config">
-    <div class="head">
-      <div class="info">
-        <div class="container">
-          <div class="avatar">
-            <img
-              :src="
-                config.Avatar[0].value
-                  ? config.Avatar[0].value
-                  : require('@/assets/head.png')
-              "
-              alt=""
-            />
-            <div class="nickname">{{ config.Name[0].value }}</div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="main">
       <div class="container">
         <div style="width: 100%;" >
@@ -24,10 +7,10 @@
             <div class="card" v-for="(item, index) in mediaList">
               <div class="face">
                 <!-- 卡片 logo -->
-                <img class="logo" :src="item[3].value" />
+                <img class="logo" :src="item.log" />
                 <!-- 卡片号码 -->
                 <label>Project Name</label>
-                <input class="card-number" :placeholder="item[0].value" type="text" required maxlength="16" />
+                <input class="card-number" :placeholder="item.name" type="text" required maxlength="16" />
                 <!--  -->
                 <div class="container2">
                   <!-- Project Label -->
@@ -39,10 +22,10 @@
               </div>
 
               <div class="back">
-                <div @click="goMedia(item[1].value)">
-                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 20px;font-weight: 600;">项目介绍：{{item[0].value}}</div>
+                <div @click="goMedia(item.link)">
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 20px;font-weight: 600;">项目介绍：{{item.name}}</div>
                   <br>
-                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 16px;font-weight: normal;">{{item[2].value}}</div>
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 16px;font-weight: normal;">{{item.description}}</div>
                 </div>
               </div>
             </div>
@@ -74,20 +57,20 @@ export default {
         .get("./config.json")
         .then((res) => {
           debugger
-          const { data } = res;
-          if (data.Name[0].value) {
-            document.title = data.Name[0].value;
-          }
           let Arr = [];
-          Object.keys(data).forEach((key) => {
-            if (key.indexOf("Link") !== -1) {
-              if (data[key][1].value) {
-                Arr.push(data[key]);
+          const { data } = res;
+          data.config.forEach((item, index) => {
+              let configObj = {};
+              item.options.forEach((i) => {
+                  configObj[i.key] = i.value;
+              })
+              if (configObj.value) {
+                  Arr.push(configObj)
               }
-            }
-          });
+          })
           this.config = data;
           this.mediaList = Arr;
+          console.log(this.mediaList)
           this.showList = []
           if (this.mediaList.length > 0) {
               for (var i = 0; i < this.mediaList.length; i++) {

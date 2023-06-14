@@ -1,274 +1,236 @@
 {
   "config": [
     {
-      "name": "Banner",
-      "options": [
-        {
-          "type": "text",
-          "key": "banner",
-          "value": "",
-          "placeholder": "https://(1440*220)"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "Avatar",
-      "options": [
-        {
-          "type": "text",
-          "key": "avatar",
-          "value": "",
-          "placeholder": "https://(100*100)"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "Name",
+      "name": "project1",
       "options": [
         {
           "type": "text",
           "key": "name",
           "value": "",
-          "placeholder": "Enter the name"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "Bio",
-      "options": [
-        {
-          "type": "text",
-          "key": "bio",
-          "value": "",
-          "placeholder": "Enter the bio"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "TwitterContent",
-      "options": [
-        {
-          "type": "text",
-          "key": "TwitterName",
-          "value": "",
-          "placeholder": "Enter the name"
+          "placeholder": "Enter the project name"
         },
         {
           "type": "text",
-          "key": "TwitterLink",
+          "key": "link",
           "value": "",
-          "placeholder": "https://"
-        }
-      ],
-      "tag": "Featured Content"
-    },
-    {
-      "name": "YouTubeContent",
-      "options": [
-        {
-          "type": "text",
-          "key": "YouTubeName",
-          "value": "",
-          "placeholder": "Enter the name"
+          "placeholder": "https:// | project website link"
         },
         {
           "type": "text",
-          "key": "YouTubeLink",
+          "key": "description",
           "value": "",
-          "placeholder": "https://"
-        }
-      ],
-      "tag": "Featured Content"
-    },
-    {
-      "name": "MirrorContent",
-      "options": [
-        {
-          "type": "text",
-          "key": "MirrorName",
-          "value": "",
-          "placeholder": "Enter the name"
+          "placeholder": "Enter the project Description"
         },
         {
           "type": "text",
-          "key": "MirrorLink",
+          "key": "log",
           "value": "",
-          "placeholder": "https://"
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
-      ],
-      "tag": "Featured Content"
+      ]
     },
     {
-      "name": "Discord",
+      "name": "project2",
       "options": [
         {
           "type": "text",
-          "key": "discord",
+          "key": "name",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
-      ],
-      "tag": "Social Links"
+      ]
     },
     {
-      "name": "Instagram",
+      "name": "project3",
       "options": [
         {
           "type": "text",
-          "key": "instagram",
+          "key": "name",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
-      ],
-      "tag": "Social Links"
+      ]
     },
     {
-      "name": "Facebook",
+      "name": "project4",
       "options": [
         {
           "type": "text",
-          "key": "facebook",
+          "key": "name",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
-      ],
-      "tag": "Social Links"
+      ]
     },
     {
-      "name": "Telegram",
+      "name": "project5",
       "options": [
         {
           "type": "text",
-          "key": "telegram",
+          "key": "name",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
-      ],
-      "tag": "Social Links"
+      ]
     },
     {
-      "name": "Twitter",
+      "name": "project6",
       "options": [
         {
           "type": "text",
-          "key": "twitter",
+          "key": "name",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
-      ],
-      "tag": "Social Links"
+      ]
     },
     {
-      "name": "Mirror",
+      "name": "project7",
       "options": [
         {
           "type": "text",
-          "key": "mirror",
+          "key": "name",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
-      ],
-      "tag": "Social Links"
+      ]
     },
     {
-      "name": "YouTube",
+      "name": "project8",
       "options": [
         {
           "type": "text",
-          "key": "youTube",
+          "key": "name",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
-        }
-      ],
-      "tag": "Social Links"
-    },
-    {
-      "name": "Website",
-      "options": [
+          "placeholder": "Enter the project name"
+        },
         {
           "type": "text",
-          "key": "website",
+          "key": "link",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
-        }
-      ],
-      "tag": "Social Links"
-    },
-    {
-      "name": "Github",
-      "options": [
+          "placeholder": "https:// | project website link"
+        },
         {
           "type": "text",
-          "key": "github",
+          "key": "description",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
-        }
-      ],
-      "tag": "Social Links"
-    },
-    {
-      "name": "Medium",
-      "options": [
+          "placeholder": "Enter the project Description"
+        },
         {
           "type": "text",
-          "key": "medium",
+          "key": "log",
           "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
-      ],
-      "tag": "Social Links"
-    },
-    {
-      "name": "Linkedin",
-      "options": [
-        {
-          "type": "text",
-          "key": "linkedin",
-          "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
-        }
-      ],
-      "tag": "Social Links"
-    },
-    {
-      "name": "Reddit",
-      "options": [
-        {
-          "type": "text",
-          "key": "reddit",
-          "value": "",
-          "placeholder": "https://",
-          "class": "mediaList"
-        }
-      ],
-      "tag": "Social Links"
-    },
-    {
-      "name": "Email",
-      "options": [
-        {
-          "type": "text",
-          "key": "email",
-          "value": "",
-          "placeholder": "Enter the E-mail"
-        }
-      ],
-      "tag": "Social Links"
+      ]
     }
   ]
 }
