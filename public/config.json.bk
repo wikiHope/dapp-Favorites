@@ -1,260 +1,236 @@
 {
-  "Avatar": [
+  "config": [
     {
-      "type": "text",
-      "key": "avatar",
-      "value": "",
-      "placeholder": "https://(100*100)"
-    }
-  ],
-  "Name": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    }
-  ],
-  "Link1": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "4everLand",
-      "placeholder": "Enter the name"
+      "name": "project1",
+      "options": [
+        {
+          "type": "text",
+          "key": "name",
+          "value": "4everLand",
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "https://4everland.org/",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "A Web3 cloud computing platform with global acceleration, privacy protection, distributed storage, and other technical features. Build a Web3 application easily, efficiently, and cost-effectively on 4EVERLAND",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "https://wiki.4everland.store/img/4everland.png",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+        }
+      ]
     },
     {
-      "type": "text",
-      "key": "link",
-      "value": "https://4everland.org/",
-      "placeholder": "https://"
+      "name": "project2",
+      "options": [
+        {
+          "type": "text",
+          "key": "name",
+          "value": "",
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+        }
+      ]
     },
     {
-      "type": "text",
-      "key": "description",
-      "value": "A Web3 cloud computing platform with global acceleration, privacy protection, distributed storage, and other technical features. Build a Web3 application easily, efficiently, and cost-effectively on 4EVERLAND",
-      "placeholder": "Enter the Description"
+      "name": "project3",
+      "options": [
+        {
+          "type": "text",
+          "key": "name",
+          "value": "",
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+        }
+      ]
     },
     {
-      "type": "text",
-      "key": "log",
-      "value": "https://wiki.4everland.store/img/4everland.png",
-      "placeholder": "https://"
-    }
-  ],
-  "Link2": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "DMAIL",
-      "placeholder": "Enter the name"
+      "name": "project4",
+      "options": [
+        {
+          "type": "text",
+          "key": "name",
+          "value": "",
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+        }
+      ]
     },
     {
-      "type": "text",
-      "key": "link",
-      "value": "https://mail.dmail.ai/",
-      "placeholder": "https://"
+      "name": "project5",
+      "options": [
+        {
+          "type": "text",
+          "key": "name",
+          "value": "",
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+        }
+      ]
     },
     {
-      "type": "text",
-      "key": "description",
-      "value": "Dmail is the first mail application based on Web3.0 and Dfinity technology that integrates NFT and distributed storage functions, and is dedicated to building a bridge between the traditional world and the parallel world. Compared with traditional mail, Dmail gives rights of control back to users. Users can manage and access data with their private keys, and can also determine the future trend of the product through community Governance. Dmail is committed to providing users with a permanent service without a centralized server, and meanwhile ensuringe the ownership and privacy of data.",
-      "placeholder": "Enter the Description"
+      "name": "project6",
+      "options": [
+        {
+          "type": "text",
+          "key": "name",
+          "value": "",
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+        }
+      ]
     },
     {
-      "type": "text",
-      "key": "log",
-      "value": "https://wiki.4everland.store/img/dmail.png",
-      "placeholder": "https://"
-    }
-  ],
-  "Link3": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "zkSync",
-      "placeholder": "Enter the name"
+      "name": "project7",
+      "options": [
+        {
+          "type": "text",
+          "key": "name",
+          "value": "",
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+        }
+      ]
     },
     {
-      "type": "text",
-      "key": "link",
-      "value": "https://zksync.io/",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "zkSync is a scaling and privacy engine for Ethereum with functionality scope including transfers of ETH and ERC20 tokens in the Ethereum network, atomic swaps and limit orders, plus native L2 NFT support. zkSync is developed on zkRollup architecture and was created by Matter Labs.",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "https://wiki.4everland.store/img/zksync.png",
-      "placeholder": "https://"
-    }
-  ],
-  "Link4": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "Lens Protocol",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "https://www.lens.xyz/",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "Lens Protocol is a composable and permissionless social graph built on top of the Polygon blockchain that allows users to build their own social platforms for Web3.",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "https://wiki.4everland.store/img/LensProtocol.png",
-      "placeholder": "https://"
-    }
-  ],
-  "Link5": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "Ethereum Name Service (ENS)",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "https://ens.domains/",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "The Ethereum Name Service (ENS) is essentially a distributed, open as well as and extensible naming system that is based on the Ethereum blockchain, with the main goal of mapping human-readable names to machine-readable identifiers in the form of Ethereum addresses, other cryptocurrency addresses, content hashes, or metadata.",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "https://wiki.4everland.store/img/ens.jpeg",
-      "placeholder": "https://"
-    }
-  ],
-  "Link6": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link7": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link8": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link9": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link10": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
+      "name": "project8",
+      "options": [
+        {
+          "type": "text",
+          "key": "name",
+          "value": "",
+          "placeholder": "Enter the project name"
+        },
+        {
+          "type": "text",
+          "key": "link",
+          "value": "",
+          "placeholder": "https:// | project website link"
+        },
+        {
+          "type": "text",
+          "key": "description",
+          "value": "",
+          "placeholder": "Enter the project Description"
+        },
+        {
+          "type": "text",
+          "key": "log",
+          "value": "",
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+        }
+      ]
     }
   ]
 }
