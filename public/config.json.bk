@@ -19,25 +19,25 @@
     {
       "type": "text",
       "key": "name",
-      "value": "",
+      "value": "4everLand",
       "placeholder": "Enter the name"
     },
     {
       "type": "text",
       "key": "link",
-      "value": "",
+      "value": "https://4everland.org/",
       "placeholder": "https://"
     },
     {
       "type": "text",
       "key": "description",
-      "value": "",
+      "value": "A Web3 cloud computing platform with global acceleration, privacy protection, distributed storage, and other technical features. Build a Web3 application easily, efficiently, and cost-effectively on 4EVERLAND",
       "placeholder": "Enter the Description"
     },
     {
       "type": "text",
       "key": "log",
-      "value": "",
+      "value": "https://wiki.4everland.store/img/4everland.png",
       "placeholder": "https://"
     }
   ],
@@ -45,25 +45,25 @@
     {
       "type": "text",
       "key": "name",
-      "value": "",
+      "value": "DMAIL",
       "placeholder": "Enter the name"
     },
     {
       "type": "text",
       "key": "link",
-      "value": "",
+      "value": "https://mail.dmail.ai/",
       "placeholder": "https://"
     },
     {
       "type": "text",
       "key": "description",
-      "value": "",
+      "value": "Dmail is the first mail application based on Web3.0 and Dfinity technology that integrates NFT and distributed storage functions, and is dedicated to building a bridge between the traditional world and the parallel world. Compared with traditional mail, Dmail gives rights of control back to users. Users can manage and access data with their private keys, and can also determine the future trend of the product through community Governance. Dmail is committed to providing users with a permanent service without a centralized server, and meanwhile ensuringe the ownership and privacy of data.",
       "placeholder": "Enter the Description"
     },
     {
       "type": "text",
       "key": "log",
-      "value": "",
+      "value": "https://wiki.4everland.store/img/dmail.png",
       "placeholder": "https://"
     }
   ],
@@ -71,25 +71,25 @@
     {
       "type": "text",
       "key": "name",
-      "value": "",
+      "value": "zkSync",
       "placeholder": "Enter the name"
     },
     {
       "type": "text",
       "key": "link",
-      "value": "",
+      "value": "https://zksync.io/",
       "placeholder": "https://"
     },
     {
       "type": "text",
       "key": "description",
-      "value": "",
+      "value": "zkSync is a scaling and privacy engine for Ethereum with functionality scope including transfers of ETH and ERC20 tokens in the Ethereum network, atomic swaps and limit orders, plus native L2 NFT support. zkSync is developed on zkRollup architecture and was created by Matter Labs.",
       "placeholder": "Enter the Description"
     },
     {
       "type": "text",
       "key": "log",
-      "value": "",
+      "value": "https://wiki.4everland.store/img/zksync.png",
       "placeholder": "https://"
     }
   ],
@@ -97,25 +97,25 @@
     {
       "type": "text",
       "key": "name",
-      "value": "",
+      "value": "Lens Protocol",
       "placeholder": "Enter the name"
     },
     {
       "type": "text",
       "key": "link",
-      "value": "",
+      "value": "https://www.lens.xyz/",
       "placeholder": "https://"
     },
     {
       "type": "text",
       "key": "description",
-      "value": "",
+      "value": "Lens Protocol is a composable and permissionless social graph built on top of the Polygon blockchain that allows users to build their own social platforms for Web3.",
       "placeholder": "Enter the Description"
     },
     {
       "type": "text",
       "key": "log",
-      "value": "",
+      "value": "https://wiki.4everland.store/img/LensProtocol.png",
       "placeholder": "https://"
     }
   ],
@@ -123,25 +123,25 @@
     {
       "type": "text",
       "key": "name",
-      "value": "",
+      "value": "Ethereum Name Service (ENS)",
       "placeholder": "Enter the name"
     },
     {
       "type": "text",
       "key": "link",
-      "value": "",
+      "value": "https://ens.domains/",
       "placeholder": "https://"
     },
     {
       "type": "text",
       "key": "description",
-      "value": "",
+      "value": "The Ethereum Name Service (ENS) is essentially a distributed, open as well as and extensible naming system that is based on the Ethereum blockchain, with the main goal of mapping human-readable names to machine-readable identifiers in the form of Ethereum addresses, other cryptocurrency addresses, content hashes, or metadata.",
       "placeholder": "Enter the Description"
     },
     {
       "type": "text",
       "key": "log",
-      "value": "",
+      "value": "https://wiki.4everland.store/img/ens.jpeg",
       "placeholder": "https://"
     }
   ],
