@@ -1,244 +1,60 @@
 {
-  "Link1": [
+  "config": [
     {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
+      "Project1": [
+        {
+          "type": "text",
+          "key": "project name",
+          "value": "",
+          "placeholder": "Enter the name"
+        },
+        {
+          "type": "text",
+          "key": "project website link",
+          "value": "",
+          "placeholder": "https://"
+        },
+        {
+          "type": "text",
+          "key": "project description",
+          "value": "",
+          "placeholder": "Enter the Description"
+        },
+        {
+          "type": "text",
+          "key": "project log url , You can upload pictures using 4everland",
+          "value": "",
+          "placeholder": "https://"
+        }
+      ]
     },
     {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link2": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link3": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link4": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link5": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link6": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link7": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "description",
-      "value": "",
-      "placeholder": "Enter the Description"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link8": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link9": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
-    }
-  ],
-  "Link10": [
-    {
-      "type": "text",
-      "key": "name",
-      "value": "",
-      "placeholder": "Enter the name"
-    },
-    {
-      "type": "text",
-      "key": "link",
-      "value": "",
-      "placeholder": "https://"
-    },
-    {
-      "type": "text",
-      "key": "log",
-      "value": "",
-      "placeholder": "https://"
+      "Project2": [
+        {
+          "type": "text",
+          "key": "project name",
+          "value": "",
+          "placeholder": "Enter the name"
+        },
+        {
+          "type": "text",
+          "key": "project website link",
+          "value": "",
+          "placeholder": "https://"
+        },
+        {
+          "type": "text",
+          "key": "project description",
+          "value": "",
+          "placeholder": "Enter the Description"
+        },
+        {
+          "type": "text",
+          "key": "project log url , You can upload pictures using 4everland",
+          "value": "",
+          "placeholder": "https://"
+        }
+      ]
     }
   ]
 }
