@@ -1,30 +1,13 @@
 {
-  "config": [
+  "config":[
     {
-      "Project1": [
+      "name": "Banner",
+      "options": [
         {
           "type": "text",
-          "key": "name",
+          "key": "banner",
           "value": "",
-          "placeholder": "Enter the project name"
-        },
-        {
-          "type": "text",
-          "key": "link",
-          "value": "",
-          "placeholder": "https:// | project website link"
-        },
-        {
-          "type": "text",
-          "key": "description",
-          "value": "",
-          "placeholder": "Enter the project Description"
-        },
-        {
-          "type": "text",
-          "key": "log",
-          "value": "",
-          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
+          "placeholder": "https://(1440*220)"
         }
       ]
     }
