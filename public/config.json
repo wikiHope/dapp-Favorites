@@ -4,55 +4,27 @@
       "Project1": [
         {
           "type": "text",
-          "key": "project name",
+          "key": "name",
           "value": "",
-          "placeholder": "Enter the name"
+          "placeholder": "Enter the project name"
         },
         {
           "type": "text",
-          "key": "project website link",
+          "key": "link",
           "value": "",
-          "placeholder": "https://"
+          "placeholder": "https:// | project website link"
         },
         {
           "type": "text",
-          "key": "project description",
+          "key": "description",
           "value": "",
-          "placeholder": "Enter the Description"
+          "placeholder": "Enter the project Description"
         },
         {
           "type": "text",
-          "key": "project log url , You can upload pictures using 4everland",
+          "key": "log",
           "value": "",
-          "placeholder": "https://"
-        }
-      ]
-    },
-    {
-      "Project2": [
-        {
-          "type": "text",
-          "key": "project name",
-          "value": "",
-          "placeholder": "Enter the name"
-        },
-        {
-          "type": "text",
-          "key": "project website link",
-          "value": "",
-          "placeholder": "https://"
-        },
-        {
-          "type": "text",
-          "key": "project description",
-          "value": "",
-          "placeholder": "Enter the Description"
-        },
-        {
-          "type": "text",
-          "key": "project log url , You can upload pictures using 4everland",
-          "value": "",
-          "placeholder": "https://"
+          "placeholder": "https:// | project log url , You can upload pictures using 4everland"
         }
       ]
     }
