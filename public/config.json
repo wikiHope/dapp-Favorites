@@ -1,6 +1,17 @@
 {
   "config":[
     {
+      "name": "Avatar",
+      "options": [
+        {
+          "type": "text",
+          "key": "avatar",
+          "value": "https://wiki.4everland.store/img/dmail.png",
+          "placeholder": "https://(100*100)"
+        }
+      ]
+    },
+    {
       "name": "DappFavorites",
       "options": [
         {

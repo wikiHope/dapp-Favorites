@@ -5,7 +5,9 @@
         <div class="container">
           <div class="avatar">
             <img
-              :src="require('@/assets/dapps.png')"
+              :src="
+                config.avatar ? config.avatar : require('@/assets/dapps.png')
+              "
               alt=""
             />
           </div>
@@ -71,16 +73,20 @@ export default {
           debugger
           let Arr = [];
           const { data } = res;
+          this.config = data;
           console.log(res)
           data.config.forEach((item, index) => {
-              let configObj = {};
-              item.options[0].items.forEach((i) => {
-                  if (i.name) {
-                      Arr.push(i)
-                  }
-              })
+              if (item.name === 'Avatar') {
+                  this.config.avatar = item.options[0].value
+              }
+              if (item.name === 'DappFavorites') {
+                  item.options[0].items.forEach((i) => {
+                      if (i.name) {
+                          Arr.push(i)
+                      }
+                  })
+              }
           })
-          this.config = data;
           this.mediaList = Arr;
           console.log(this.mediaList)
           this.showList = []
