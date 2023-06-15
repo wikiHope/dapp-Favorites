@@ -6,7 +6,7 @@
         {
           "type": "text",
           "key": "avatar",
-          "value": "https://wiki.4everland.store/img/dmail.png",
+          "value": "",
           "placeholder": "https://(100*100)"
         }
       ]
