@@ -133,8 +133,8 @@ export default {
       .avatar {
         text-align: center;
         img {
-          width: 80px;
-          height: 80px;
+          width: 305px;
+          height: 150px;
           border-radius: 50%;
         }
       }
@@ -225,7 +225,6 @@ export default {
 
 
   .cardLine {
-    position: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
