@@ -5,7 +5,7 @@
         <div class="container">
           <div class="avatar">
             <img
-              :src="require('@/assets/head.png')"
+              :src="require('@/assets/dapps.png')"
               alt=""
             />
           </div>
