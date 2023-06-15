@@ -19,7 +19,7 @@
             <div class="card" v-for="(item, index) in mediaList">
               <div class="face">
                 <!-- 卡片 logo -->
-                <img class="logo" :src="item.log" />
+                <img class="logo" :src="item.logo" />
                 <!-- 卡片号码 -->
                 <label>Project Name</label>
                 <input class="card-number" :placeholder="item.name" type="text" required maxlength="16" />
@@ -28,7 +28,7 @@
                   <!-- Project Label -->
                   <div class="name">
                     <label>Project Label</label>
-                    <input class="card-name" placeholder="DEFI NFT WEB3 .." type="text" required />
+                    <input class="card-name" :placeholder="item.lable" type="text" required />
                   </div>
                 </div>
               </div>
@@ -74,12 +74,11 @@ export default {
           console.log(res)
           data.config.forEach((item, index) => {
               let configObj = {};
-              item.options.forEach((i) => {
-                  configObj[i.key] = i.value;
+              item.options[0].items.forEach((i) => {
+                  if (i.name) {
+                      Arr.push(i)
+                  }
               })
-              if (configObj.name) {
-                  Arr.push(configObj)
-              }
           })
           this.config = data;
           this.mediaList = Arr;
