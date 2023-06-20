@@ -249,7 +249,6 @@ export default {
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
     margin: 20px;
     padding: 20px;
-    overflow: hidden;
   }
   .face {
     position: absolute;
@@ -267,6 +266,10 @@ export default {
   .card:hover{
     overflow: auto;
   }
+  /*.card:not(:hover) {*/
+    /*overflow: hidden;*/
+  /*}*/
+
   .card:hover .face{
     transform: rotateY(-180deg)
   }
