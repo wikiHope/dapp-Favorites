@@ -37,9 +37,9 @@
 
               <div class="back">
                 <div @click="goMedia(item.link)">
-                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 20px;font-weight: 600;">项目介绍：{{item.name}}</div>
+                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 20px;font-weight: 600;">Project Name：{{item.name}}</div>
                   <br>
-                  <div style="display: flex;align-items: center;justify-content: center;width: 100%;font-size: 16px;font-weight: normal;">{{item.description}}</div>
+                  <div style="display: flex;overflow:auto;align-items: center;justify-content: center;width: 100%;font-size: 16px;font-weight: normal;">{{item.description}}</div>
                 </div>
               </div>
             </div>
