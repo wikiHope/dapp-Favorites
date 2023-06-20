@@ -264,7 +264,7 @@ export default {
     padding: 20px;
   }
 
-  .card:hover .card{
+  .card:hover{
     overflow: auto;
   }
   .card:hover .face{
