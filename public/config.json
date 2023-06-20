@@ -64,7 +64,7 @@
             {
               "name": "Ethereum Name Service (ENS)",
               "lable": "Web3",
-              "description": "The Ethereum Name Service (ENS) is essentially a distributed, open as well as and extensible naming system that is based on the Ethereum blockchain, with the main goal of mapping human-readable names to machine-readable identifiers in the form of Ethereum addresses, other cryptocurrency addresses, content hashes, or metadata.",
+              "description": "The Ethereum Name Service (ENS) is essentially a distributed, open as well as and extensible naming system that is based on the Ethereum blockchain, with the main goal of mapping human-readable names to machine-readable identifiers in the form of Ethereum addresses, other cryptocurrency addresses, content hashes, or metadata.The Ethereum Name Service (ENS) is essentially a distributed, open as well as and extensible naming system that is based on the Ethereum blockchain, with the main goal of mapping human-readable names to machine-readable identifiers in the form of Ethereum addresses, other cryptocurrency addresses, content hashes, or metadata.",
               "logo": "https://wiki.4everland.store/img/ens.jpeg",
               "link": "https://ens.domains/"
             }
